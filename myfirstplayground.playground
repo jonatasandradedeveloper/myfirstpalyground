@@ -1,0 +1,21 @@
+import UIKit
+
+// Definir uma constante com o valor inicial de "Steve"
+let constantName = "Steve"
+
+// Definir uma variável do tipo String opcional com o valor inicial "Jobs"
+var optionalName: String? = "Jobs"
+
+// Escrever um print fazendo a interpolação com a constante e variável,
+// definindo o valor default para a variável opcional como "Wozniak"
+if let name = optionalName {
+    print("Constante: \(constantName), Variável: \(name)")
+} else {
+    optionalName = "Wozniak"
+}
+
+// Fazer um optional binding na variável e dentro da condição
+// fazer outro print com interpolação entre constante e variável que foi desembrulhada
+if let name = optionalName {
+    print("Constante: \(constantName), Variável: \(name)")
+}
